@@ -3,7 +3,7 @@ Get domain from browser location.href
 
 https://www.npmjs.com/package/getdomainfromweb
 
-## Install module:
+## Install:
 ```
 npm install getdomainfromweb
 ```
@@ -13,7 +13,6 @@ npm install getdomainfromweb
 var getDomain = require('getdomainfromweb');
 getDomain();
 ```
--> npmjs.com
 
 ##License
 MIT
