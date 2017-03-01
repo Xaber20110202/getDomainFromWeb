@@ -1,6 +1,6 @@
 {
   "name": "getdomainfromweb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "get domain from browser location.href",
   "main": "index.js",
   "scripts": {

@@ -17,11 +17,15 @@ var getDomain = function getDomain() {
     var domain = window.location.host.split(':').shift(),
         arr = domain.split('.'),
         len = arr.length,
-        tempCookie = '_temp_' + new Date().getTime();
+        oDate = new Date(),
+        tempCookie = '_temp_' + oDate.getTime();
 
     if (len <= 2) {
         return domain;
     }
+
+    // 设置3s过期 避免获取不到
+    oDate.setTime(oDate.getTime() + 3000);
 
     for (; len > 2; len--) {
         domain = arr.slice(1).join('.');
